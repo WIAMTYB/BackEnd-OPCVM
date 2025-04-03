@@ -1,0 +1,14 @@
+Lombook add version to have the getters and setters well implemented
+Securisation API gateway via keyclaock avec generation de Token JWT  avant de passer au microservice client tu dois dabord passer par la gateway
+Normalement les autres microservices ne sont pas securises il faut dabord securiser les autres microservices
+HttpSecurity and ServerHttpSecurity cater to different programming models in the Spring ecosystem.
+The former is perfect for traditional, servlet-based web applications, while the latter is designed to meet the needs of modern, reactive web applications built on top of WebFlux.
+Redis stocke les données en mémoire plutôt que sur disque dur ou SSD, ce qui lui confère une vitesse, une fiabilité et des performances exceptionnelles.
+La difference entre RestTemplate et FeignClient cest selon le niveau  dabstraction et leurs facilite dutilisation lorsqu'il sagit deffectuer des appels HHTP entre microservices dans un environnement Spring.
+feignClient : Il est particulièrement utile dans les architectures microservices où vous devez effectuer des appels HTTP entre services de manière répétée. FeignClient est souvent utilisé avec Spring Cloud pour faciliter la gestion de la communication entre microservices.
+OAuth2 protège des ressources
+OIDC prouve qui tu es
+OIDC est une extension d'OAuth2 qui ajoute l'authentification
+DDD domain driven design  une approche de la conception logicielle fondée sur deux principes :
+ les conceptions complexes doivent être basées sur une modélisation. Par exemple UML ou modèle entité-association ;
+  l'accent doit être sur le domaine et la logique associée. Et à ce titre il constitue l'une des couches de l'architecture en couches (entre les couches utilisateur et infrastructure par exemple[1])

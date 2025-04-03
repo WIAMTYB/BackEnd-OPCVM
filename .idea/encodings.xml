@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/API-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Client-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Client2-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Client3-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Client3-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Customer-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Discovery-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Gateway-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Invest-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Investissement-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Recommendation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Update-recommendation/src/main/java" charset="UTF-8" />
+  </component>
+</project>
