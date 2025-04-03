@@ -1,4 +1,4 @@
-# A simple application for recommendation OPCvm 
+# A simple application for recommendation  of OPCVMs
 .
 This project demonstrates how a user or a client can have recommendation of opcvm based on amount is a Spring Boot application using Keycloak in gateway for securing the microservice invest , a powerful open-source Identity and Access Management tool Using just one microservice  
 
@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
     docker-compose up -d
     ```
 2. Navigate to [Keycloak Admin UI Console](http://localhost:9090 "Keycloak Admin UI Console")
-3. Create a new Real and name ut ```Wiamou``` or update the ```application.yml``` file and specify your Realm name
+3. Create a new Real and name it `` banking-service``` or update the ```application.yml``` file and specify your Realm name
 4. Create Roles
 5. Create Users
 6. Assign roles to users
