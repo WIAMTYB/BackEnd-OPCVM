@@ -21,15 +21,6 @@
         </processorPath>
         <module name="Invest-Service" />
       </profile>
-      <profile name="Annotation profile for Recommendation" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
-        </processorPath>
-        <module name="Recommendation" />
-      </profile>
       <profile name="Annotation profile for Client-Service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -38,6 +29,16 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
         <module name="Client-Service" />
+      </profile>
+      <profile name="Annotation profile for Recom" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="Recom" />
+        <module name="Recommendation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -49,6 +50,7 @@
       <module name="Discovery-Service.test" target="17" />
       <module name="Gateway-Service" target="17" />
       <module name="Investissement-Service" target="17" />
+      <module name="Recom-Service" target="17" />
       <module name="Update-recommendation" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -63,6 +65,8 @@
       <module name="Gateway-Service" options="-parameters" />
       <module name="Invest-Service" options="-parameters" />
       <module name="Investissement-Service" options="-parameters" />
+      <module name="Recom" options="-parameters" />
+      <module name="Recom-Service" options="-parameters" />
       <module name="Recommendation" options="-parameters" />
       <module name="Update-recommendation" options="-parameters" />
     </option>

@@ -12,3 +12,34 @@ OIDC est une extension d'OAuth2 qui ajoute l'authentification
 DDD domain driven design  une approche de la conception logicielle fondée sur deux principes :
  les conceptions complexes doivent être basées sur une modélisation. Par exemple UML ou modèle entité-association ;
   l'accent doit être sur le domaine et la logique associée. Et à ce titre il constitue l'une des couches de l'architecture en couches (entre les couches utilisateur et infrastructure par exemple[1])
+
+Dans un projet Maven multi-modules pour une architecture de microservices,
+un module parent POM PARENT  est utilisé pour gérer les configurations communes et les dépendances de tous les microservices enfants.
+ Voici comment cela fonctionne généralement :
+
+ POM Parent :
+
+ Définit le packaging sur pom. Cela indique qu'il ne s'agit pas d'un projet Java en soi, mais d'un agrégateur et d'un gestionnaire pour les sous-projets.
+ Gère les versions des dépendances communes dans la section <dependencyManagement>. Cela permet de s'assurer que tous les microservices utilisent les mêmes versions des bibliothèques, sauf indication contraire.
+ Configure les plugins Maven communs dans la section <build> et <pluginManagement>.
+ Définit les propriétés globales (par exemple, les versions de Java, les versions des frameworks).
+ Liste les microservices enfants en tant que <module> dans la section <modules>.
+
+ Modules Enfants (Microservices) :
+
+ Chaque microservice est un projet Maven distinct avec son propre fichier pom.xml.
+ Le pom.xml de chaque microservice spécifie le POM parent dans la balise <parent>. Cela permet d'hériter des configurations et de la gestion des dépendances définies dans le POM parent.
+ Les microservices peuvent ajouter leurs propres dépendances spécifiques en plus de celles gérées par le parent. Ils peuvent également redéfinir les versions des dépendances héritées si nécessaire.
+ Chaque microservice contient le code source spécifique à sa fonctionnalité.
+
+
+
+@RequestLine est utilisée à l'intérieur d'une interface @FeignClient pour définir les détails spécifiques de chaque requête HTTP (méthode et chemin).
+Pensez à @FeignClient comme étant l'annotation qui dit "cette interface est un client pour un autre service", et @RequestLine (ou les annotations de méthodes HTTP spécifiques comme @GetMapping, @PostMapping, qui sont des raccourcis pour @RequestLine) comme étant l'annotation qui dit "et cette méthode de l'interface effectue une requête HTTP de tel type à tel chemin sur ce service".
+
+
+@angular/ssr permet de générer des pages statiques via un processus appelé Server side rendering (SSR).
+
+
+Http un protocole sans etat  et normalement les sessions et les cookies sont bien ou une bonne approche pour  maintenir letat dutilisateur
+Une fois qu'un utilisateur s'est connecté, le serveur peut se souvenir de lui lors des requêtes suivantes sans qu'il ait besoin de se réauthentifier à chaque fois.
